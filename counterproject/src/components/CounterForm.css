@@ -1,0 +1,17 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+
+  .form{
+    background-color: rgb(221, 221, 215);
+    justify-content: center;
+    text-align: center;
+  }
+  .counter{
+    background-color: darkslateblue;
+    margin: 1rem;
+  }
