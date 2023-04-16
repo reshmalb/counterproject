@@ -4,6 +4,7 @@ import CounterForm from "./components/CounterForm";
 import Login from "./Layout/Login";
 import Header from "./Layout/Header";
 import { useSelector } from 'react-redux';
+import UserProfile from "./Layout/UserProfile";
 
 
 
@@ -13,7 +14,8 @@ function App() {
     <Fragment>
       <Header/>
      {!isAuth &&<Login/>}
-     {isAuth&& <CounterForm/>}
+     {isAuth&&<UserProfile/>}
+       <CounterForm/>
     </Fragment>
 
 

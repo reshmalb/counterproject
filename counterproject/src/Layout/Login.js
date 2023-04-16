@@ -7,17 +7,18 @@ const Login=()=>{
     const dispatch=useDispatch();
 
 
-const loginHandler=()=>{
+const loginHandler=(e)=>{
+    e.preventDefault();
     dispatch(authActions.login())
 
 }
 
     return(
     <div className="container" >  
-    <form class="login-form" onsubmit={loginHandler}>
-      <label for="email">Email:</label>
+    <form className="login-form" onSubmit={loginHandler}>
+      <label htmlFor="email">Email:</label>
        <input type="email" id="email" name="email" required/>
-          <label for="password">Password:</label>
+          <label htmlFor="password">Password:</label>
          <input type="password" id="password" name="password" required/>
           <button type="submit">Log in</button>
      </form>

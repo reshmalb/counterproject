@@ -9,17 +9,18 @@ const Header=()=>{
    const dispatch=useDispatch();
 
  const logoutHandler=()=>{
+    
     dispatch(authActions.logout())
 
  }
 
     return(
         <header>
-        <nav class="navbar">
-          <div class="navbar-brand">Redux Auth</div>
-          {isAuth&&  <ul class="navbar-links">
-           <li><a href="#">MyProducts</a></li>
-            <li><a href="#">MySales</a></li>
+        <nav className="navbar">
+          <div className="navbar-brand">Redux Auth</div>
+          {isAuth &&  <ul className="navbar-links">
+           <li><a href="#products">MyProducts</a></li>          
+            <li><a href="#sales">MySales</a></li>
            <li><button  onClick={logoutHandler}>Logout</button></li>
           </ul>}
         </nav>
