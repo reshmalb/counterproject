@@ -1,0 +1,38 @@
+/* Set up the basic styles for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  /* Style the brand section */
+  .navbar-brand {
+    font-size: 1.5em;
+  }
+  
+  /* Style the links section */
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the links */
+  .navbar-links li {
+    margin: 0 10px;
+  }
+  
+  .navbar-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Align the links to the right */
+  .navbar-links {
+    margin-left: auto;
+  }
+  

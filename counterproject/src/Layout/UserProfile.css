@@ -1,0 +1,17 @@
+/* Style the user profile container */
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    max-width: 300px;
+  }
+  
+ 
+  
+  /* Style the profile name and title */
+  .user-profile h2, .user-profile p {
+    margin: 0;
+    text-align: center;
+  }
+  

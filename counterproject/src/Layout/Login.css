@@ -1,0 +1,42 @@
+/* Center the form on the page */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    max-width: 300px;
+   
+  }
+  
+  /* Style the labels */
+  .login-form label {
+    margin-top: 10px;
+  }
+  
+  /* Style the inputs */
+  .login-form input {
+    padding: 5px;
+    margin-top: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #333;
+  }
+  
+  /* Style the submit button */
+  .login-form button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: darkslateblue;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  
