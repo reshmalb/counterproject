@@ -18,11 +18,11 @@ const Header=()=>{
         <header>
         <nav className="navbar">
           <div className="navbar-brand">Redux Auth</div>
-          {isAuth &&  <ul className="navbar-links">
+          {isAuth &&  (<ul className="navbar-links">
            <li><a href="#products">MyProducts</a></li>          
             <li><a href="#sales">MySales</a></li>
            <li><button  onClick={logoutHandler}>Logout</button></li>
-          </ul>}
+          </ul>)}
         </nav>
       </header>
       

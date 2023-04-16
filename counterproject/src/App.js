@@ -9,12 +9,14 @@ import UserProfile from "./Layout/UserProfile";
 
 
 function App() {
-  const isAuth=useSelector(state=> state.auth.isAuthenticated)
+  const isAuth = useSelector((state)=> state.auth.isAuthenticated)
+
+  console.log("is auth in app",isAuth);
   return (
     <Fragment>
       <Header/>
-     {!isAuth &&<Login/>}
-     {isAuth&&<UserProfile/>}
+     {!isAuth && <Login/>}
+     {isAuth && <UserProfile/>}
        <CounterForm/>
     </Fragment>
 
